@@ -5,14 +5,14 @@ import datetime
 from posixpath import split
 import time
 import pyttsx3
-import speech_recognition as sr
+import speech_recognition as sr   #pip install SpeechRecognition
 import wikipedia
 import webbrowser
 import os
 import random
 import pywhatkit  # install flask module also
 import speedtest
-
+#pip install pyaudio
 # -------------------------------------------------------------------------------------------------------------
 
 engine = pyttsx3.init('sapi5')
@@ -51,6 +51,7 @@ def wishme():
 
     speak("I am Jarvis sir. please tell me how may i help you.")
     print("I am Jarvis sir. please tell me how may i help you.")
+    print("---if u want audio mode pls type audio mode---")
 
 
 def takeCommand():
@@ -77,7 +78,7 @@ def takeCommandinput():
     return query
 
 
-com = takeCommand
+com = takeCommandinput
 run = True
 
 # -------------------------------------------------------------------------------------------------------------
